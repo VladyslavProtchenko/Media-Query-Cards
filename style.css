@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;800&display=swap');
+
+*{  
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+body {
+    min-width: 1400px;
+}
+
+.container  {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin: auto;
+    margin-top: 200px;
+    max-width: 1400px;
+    padding-bottom: 500px;
+
+}
+
+.name {
+    font-size: 30px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+.describe {
+    font-family: 'Karla', sans-serif;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 500;
+    color:rgb(126, 126, 126);
+   margin-bottom: 40px;
+   margin-left: 30px;
+
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 60px;
+    
+}
+.card {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 1px solid #c1c1c1;
+    margin-bottom: 20px;
+    opacity: 0.7;
+}
+.card:hover {
+    opacity: 1;
+    box-shadow:  0 0 10px 3px rgb(232, 232, 232);
+}
+.card-header {
+    
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 30px 0px 20px;
+    border-bottom: 1px solid #c1c1c1;
+}
+.business {
+    position: relative;
+}
+.card-mark {
+    
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background: url('/img/card-mark.png');
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.card-price {
+    font-size: 18px;
+    font-weight: 500;
+    color: grey;
+    padding: 20px 50px;
+    border-bottom: 1px solid #c1c1c1;
+}
+.card-price span {
+    color:rgb(255, 143, 73);
+}
+.card-content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    padding: 40px 0;
+    color: grey;
+}
+ul {
+    list-style: none;
+    margin-bottom: 40px;
+}
+
+li {
+    margin-bottom: 20px;
+}
+.button {
+    cursor: pointer;
+    font-family: 'Karla', sans-serif;
+    padding: 16px;
+    width: 150px;
+    margin:  0 auto;
+    border-radius: 40px;
+    text-transform: uppercase;
+    color: white;
+    background: rgb(65, 176, 204);
+    float: bottom;
+}
+.button:hover {
+    background: rgb(106, 222, 251);
+
+}
+@media (max-width: 1280px) {
+    .container {
+    max-width: 800px;
+    }
+    .name, .describe {
+        margin-left: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+    max-width: 580px;
+    }
+    .name, .describe {
+        margin: 0 auto 1`0px ;
+    }
+    .describe {
+        
+    }
+}
+.thanks {
+    margin: 0 auto; 
+    color: rgb(181, 181, 181);
+} 
